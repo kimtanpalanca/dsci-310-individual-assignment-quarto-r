@@ -5,8 +5,9 @@ all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
 	reports/qmd_example.html \
-	reports/qmd_example.pdf
-
+	reports/qmd_example.pdf \
+	docs/index.html \
+	docs/qmd_example.pdf
 
 
 # generate figures and objects for report
