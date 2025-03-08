@@ -8,6 +8,7 @@ format:
         toc: true
         toc-depth: 2
         toc-title: Table of Contents
+        embed-resources: true
 editor: source
 execute:
   echo: false
