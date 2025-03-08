@@ -23,10 +23,10 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to pdf
 
 docs/index.html: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to html
+	quarto render reports/qmd_example.qmd --to html --output-dir docs
 
 docs/qmd_example.pdf: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to pdf
+	quarto render reports/qmd_example.qmd --to pdf --output-dir docs
 
 # clean
 clean:
