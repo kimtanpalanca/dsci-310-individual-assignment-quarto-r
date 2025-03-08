@@ -7,7 +7,7 @@ all: results/horse_pop_plot_largest_sd.png \
 	reports/qmd_example.html \
 	reports/qmd_example.pdf \
 	docs/index.html \
-	docs/qmd_example.pdf
+	docs/index.pdf
 
 
 # generate figures and objects for report
@@ -25,8 +25,8 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 docs/index.html: reports/qmd_example.html | docs
 	cp reports/qmd_example.html docs/index.html
 
-docs/qmd_example.pdf: reports/qmd_example.pdf | docs
-	cp reports/qmd_example.pdf docs/qmd_example.pdf
+docs/index.pdf: reports/qmd_example.pdf | docs
+	cp reports/qmd_example.pdf docs/index.pdf
 
 # clean
 clean:
@@ -35,4 +35,4 @@ clean:
 		reports/qmd_example.pdf \
 		reports/qmd_example_files \
 		docs/index.html \
-		docs/qmd_example.pdf
+		docs/index.pdf
