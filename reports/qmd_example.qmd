@@ -12,6 +12,8 @@ format:
 editor: source
 execute:
   echo: false
+  warning: false
+  message: false
   output: true
 ---
 
